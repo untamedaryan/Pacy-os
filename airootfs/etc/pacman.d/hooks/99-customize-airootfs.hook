@@ -1,0 +1,10 @@
+[Trigger]
+Type = Package
+Operation = Install
+Target = base
+
+[Action]
+Description = Customizing live environment...
+When = PostTransaction
+Exec = /root/customize-airootfs.sh
+NeedsTargets

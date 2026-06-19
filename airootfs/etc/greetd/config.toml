@@ -1,0 +1,7 @@
+[terminal]
+vt = 1
+switch = true
+
+[default_session]
+command = "tuigreet --cmd /usr/local/bin/start-hyprland --time --remember --asterisks"
+user = "liveuser"

@@ -1,0 +1,112 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 34,
+    "spacing": 0,
+
+    "modules-left": [
+        "group/system"
+    ],
+
+    "modules-center": [
+        "custom/powerprofile",
+        "group/workspaces"
+    ],
+
+    "modules-right": [
+        "group/control"
+    ],
+
+  "group/system": {
+    "orientation": "horizontal",
+    "modules": [
+        "custom/cpu",
+        "custom/ram",
+        "custom/gpu"
+    ]
+},
+    "group/workspaces": {
+        "orientation": "horizontal",
+        "modules": [
+            "hyprland/workspaces"
+        ]
+    },
+
+    "group/control": {
+        "orientation": "horizontal",
+        "modules": [
+            "custom/brightness",
+            "pulseaudio",
+            "network",
+            "custom/bluetooth",
+            "custom/battery"
+        ]
+    },
+
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": false,
+        "format": "{name}"
+    },
+
+"custom/cpu": {
+    "exec": "~/.config/waybar/scripts/cpu.sh",
+    "return-type": "json",
+    "interval": 3
+},
+"custom/ram": {
+    "exec": "~/.config/waybar/scripts/ram.sh",
+    "return-type": "json",
+    "interval": 5
+},
+"custom/gpu": {
+    "exec": "~/.config/waybar/scripts/gpu.sh",
+    "return-type": "json",
+    "interval": 3
+},    
+
+
+"custom/powerprofile": {
+    "exec": "~/.config/waybar/scripts/powerprofile.sh",
+    "return-type": "json",
+    "interval": 2,
+    "on-click": "~/.config/waybar/scripts/powerprofile-cycle.sh",
+    "tooltip": true
+}, 
+
+
+"custom/brightness": {
+        "exec": "~/.config/waybar/scripts/brightness.sh",
+        "interval": 2,
+        "on-scroll-up": "brightnessctl set +5%",
+        "on-scroll-down": "brightnessctl set 5%-"
+    },
+
+    "pulseaudio": {
+        "format": "󰕾 {volume}%",
+        "format-muted": "󰖁",
+        "on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+",
+        "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
+    },
+
+    "network": {
+        "format-wifi": "󰖩",
+        "format-ethernet": "󰈀",
+        "format-disconnected": "󰖪"
+    },
+
+    "custom/bluetooth": {
+        "exec": "~/.config/waybar/scripts/bluetooth.sh",
+        "interval": 5,
+        "on-click": "kitty -e bluetui"
+    },
+"custom/battery": {
+    "exec": "~/.config/waybar/scripts/battery.sh",
+    "return-type": "json",
+    "interval": 10,
+    "format": "{}",
+    "tooltip": true
+}
+
+
+}

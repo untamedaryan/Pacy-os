@@ -1,0 +1,13 @@
+configuration {
+    modi: "drun,calc,emoji";
+    show-icons: true;
+    icon-theme: "Papirus-Dark";
+    display-drun: " Apps";
+    display-calc: " Calc";
+    display-emoji: " Emoji";
+    terminal: "kitty";
+    drun-display-format: "{name}";
+    font: "SpaceMono Nerd Font 12";
+}
+
+@theme "~/.config/rofi/catppuccin-mocha.rasi"

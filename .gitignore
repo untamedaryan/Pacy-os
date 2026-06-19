@@ -1,0 +1,37 @@
+# ArchISO build artifacts
+work/
+out/
+
+# Generated ISOs
+*.iso
+
+# Virtual machine disks
+*.qcow2
+*.img
+*.vdi
+*.vmdk
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+*~
+
+# Python
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+
+# VS Code
+.vscode/
+
+# JetBrains
+.idea/
+
+# macOS
+.DS_Store

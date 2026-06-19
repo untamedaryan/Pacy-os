@@ -1,0 +1,7 @@
+NAME="Pacy OS"
+PRETTY_NAME="Pacy OS"
+ID=pacy
+ID_LIKE=arch
+HOME_URL="https://github.com/technicave/pacy-os"
+SUPPORT_URL="https://github.com/technicave/pacy-os"
+BUG_REPORT_URL="https://github.com/technicave/pacy-os/issues"

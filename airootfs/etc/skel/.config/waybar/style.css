@@ -1,0 +1,149 @@
+* {
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+
+    font-family: "JetBrainsMono Nerd Font", "Noto Color Emoji";
+    font-size: 12px;
+    font-weight: 600;
+}
+
+window#waybar {
+    background: transparent;
+    color: #e5e5e5;
+    transition: opacity 0.3s ease;
+}
+
+/* ---------- Islands ---------- */
+.modules-left,
+.modules-center,
+.modules-right {
+    background: transparent;
+}
+
+
+#custom-cpu,
+#custom-ram,
+#custom-gpu,
+#hyprland-workspaces,
+#custom-brightness,
+#pulseaudio,
+#network,
+#custom-bluetooth,
+#custom-battery {
+
+    background: rgba(15,15,15,0.60);
+    border-radius: 12px;
+
+    margin: 4px 2px;
+    padding: 0 6px;
+
+  box-shadow: none;
+}
+
+#group-system {
+    border-left: 2px solid rgba(139, 233, 253, 0.4);
+}
+
+#group-workspaces {
+    border-left: 2px solid rgba(189, 147, 249, 0.4);
+    border-right: 2px solid rgba(189, 147, 249, 0.4);
+}
+
+#group-control {
+    border-right: 2px solid rgba(80, 250, 123, 0.4);
+}
+
+/* ---------- Module spacing ---------- */
+
+#custom-cpu,
+#custom-ram,
+#custom-gpu,
+#custom-brightness,
+#pulseaudio,
+#network,
+#custom-bluetooth,
+#custom-battery {
+    padding: 0 8px;
+}
+
+/* ---------- Workspaces ---------- */
+
+#workspaces {
+    padding: 0 4px;
+}
+
+#workspaces button {
+    color: #555555;
+
+    min-width: 22px;
+
+    padding: 0 8px;
+    margin: 4px 2px;
+
+    border-radius: 8px;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease;
+}
+
+#workspaces button.active {
+    color: #ffffff;
+
+    background: rgba(189,147,249,0.22);
+
+    border-bottom: 2px solid rgba(189,147,249,0.6);
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease;
+}
+
+#workspaces button:hover {
+    color: #cccccc;
+    background: rgba(255, 255, 255, 0.07);
+}
+
+/* ---------- Hover ---------- */
+
+#custom-cpu:hover,
+#custom-ram:hover,
+#custom-gpu:hover {
+    background: rgba(139, 233, 253, 0.08);
+    border-radius: 8px;
+    color: #8be9fd;
+}
+
+#custom-brightness:hover,
+#pulseaudio:hover,
+#network:hover,
+#custom-bluetooth:hover,
+#custom-battery:hover {
+    background: rgba(80, 250, 123, 0.08);
+    border-radius: 8px;
+    color: #50fa7b;
+}
+
+/* ---------- Power Profile (Pac-Man) ---------- */
+
+#custom-powerprofile {
+    font-size: 16px;
+    min-width: 22px;
+}
+
+#custom-powerprofile.balanced {
+    color: #00FFFF;
+  
+}
+
+#custom-powerprofile.performance {
+    color: #ff5555;
+
+}
+
+#custom-powerprofile.power-saver {
+    color: #50fa7b;
+  
+}
+
