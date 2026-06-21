@@ -172,6 +172,7 @@ yazi
 wayland
 wayland-protocols
 
+dbus
 zoxide
 seatd
 polkit

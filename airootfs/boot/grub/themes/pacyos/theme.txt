@@ -1,0 +1,68 @@
+# ╔══════════════════════════════════════╗
+# ║         Pacy OS - GRUB Theme         ║
+# ║   Linux / Hyprland Edition           ║
+# ╚══════════════════════════════════════╝
+
+# Global styling
+desktop-image: "background.png"
+desktop-color: "#0a0a0a"
+terminal-font: "Unifont Regular 16"
+terminal-border: "0"
+
+# ── Boot menu ────────────────────────────────────────────────
++ boot_menu {
+    left   = 55%
+    top    = 38%
+    width  = 38%
+    height = 30%
+
+    item_font            = "Unifont Regular 16"
+    item_color           = "#4a4a5a"
+    selected_item_color  = "#00e5cc"
+
+    item_height          = 36
+    item_padding         = 16
+    item_spacing         = 4
+
+    selected_item_pixmap_style = "select_*.png"
+
+    icon_width  = 0
+    icon_height = 0
+
+    scrollbar = false
+}
+
+# ── Title label ───────────────────────────────────────────────
++ label {
+    left  = 55%
+    top   = 30%
+    width = 38%
+    align = "center"
+    id    = "__title__"
+    text  = "PACY OS"
+    font  = "Unifont Regular 24"
+    color = "#00e5cc"
+}
+
+# ── Subtitle label ────────────────────────────────────────────
++ label {
+    left  = 55%
+    top   = 35%
+    width = 38%
+    align = "center"
+    text  = "LINUX / HYPRLAND EDITION  ·  ARCH BASED"
+    font  = "Unifont Regular 12"
+    color = "#2a6a64"
+}
+
+# ── Timer/progress label ──────────────────────────────────────
++ label {
+    left  = 55%
+    top   = 72%
+    width = 38%
+    align = "center"
+    id    = "__timeout__"
+    text  = "Booting in %d seconds"
+    font  = "Unifont Regular 12"
+    color = "#2a6a64"
+}
