@@ -186,7 +186,7 @@ xdg-desktop-portal-hyprland
 swaync
 mesa
 vulkan-radeon
-
+impala
 libnotify
 libpulse
 gst-plugin-pipewire

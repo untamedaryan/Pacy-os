@@ -3,5 +3,10 @@ enable dbus.service
 enable seatd.service
 enable greetd.service
 
+# Network management
+enable NetworkManager.service
+enable NetworkManager-wait-online.service
+enable iwd.service
+
 # You can also disable things if needed
 # disable some-unwanted.service
