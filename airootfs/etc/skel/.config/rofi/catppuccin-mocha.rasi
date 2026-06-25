@@ -1,10 +1,10 @@
 * {
-    bg:       #1e1e2e;
-    bg-alt:   #313244;
-    fg:       #cdd6f4;
-    fg-alt:   #6c7086;
-    accent:   #89b4fa;
-    urgent:   #f38ba8;
+    bg:       #0a0a0a;
+    bg-alt:   #1a1a1a;
+    fg:       #e5e5e5;
+    fg-alt:   #888888;
+    accent:   #FFD700;
+    urgent:   #ff5555;
 
     background-color: transparent;
     text-color: @fg;
@@ -12,9 +12,9 @@
 
 window {
     background-color: @bg;
-    border: 2px solid;
-    border-color: @accent;
-    border-radius: 12px;
+    border: 1px solid;
+   border-color: #2a2a2a;
+   border-radius: 16px;
     width: 600px;
 }
 
@@ -24,7 +24,9 @@ mainbox {
 
 inputbar {
     background-color: @bg-alt;
-    border-radius: 8px;
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: #2a2a2a;
     padding: 8px 12px;
     margin: 0 0 10px 0;
     children: [prompt, entry];
@@ -52,12 +54,19 @@ element {
 
 element normal.normal {
     background-color: transparent;
-    text-color: @fg;
+    text-color: @fg-alt;
 }
 
 element selected.normal {
-    background-color: @bg-alt;
+    background-color: transparent;
     text-color: @accent;
+    border: 0px solid;
+    border-color: @accent;
+}
+
+element alternate.normal {
+    background-color: transparent;
+    text-color: @fg;
 }
 
 element-icon {

@@ -168,10 +168,12 @@ pavucontrol
 grim
 slurp
 yazi
+hyprlock
+hypridle
 
 wayland
 wayland-protocols
-
+rofi
 dbus
 zoxide
 seatd
@@ -181,5 +183,10 @@ greetd-tuigreet
 xdg-user-dirs
 xdg-desktop-portal
 xdg-desktop-portal-hyprland
+swaync
 mesa
 vulkan-radeon
+
+libnotify
+libpulse
+gst-plugin-pipewire

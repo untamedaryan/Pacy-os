@@ -1,0 +1,12 @@
+{
+    "positionX": "right",
+    "positionY": "top",
+    "layer": "overlay",
+    "control-center-margin-top": 0 ,
+    "control-center-margin-bottom": 8,
+    "control-center-margin-right": 8,
+    "control-center-margin-left": 0,
+    "control-center-width": 360,
+    "control-center-height": 600,
+    "notification-window-width": 360
+}
