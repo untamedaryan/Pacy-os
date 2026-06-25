@@ -1,0 +1,7 @@
+# Enable services for the live environment
+enable dbus.service
+enable seatd.service
+enable greetd.service
+
+# You can also disable things if needed
+# disable some-unwanted.service
