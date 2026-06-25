@@ -18,31 +18,31 @@ window#waybar {
 .modules-left,
 .modules-center,
 .modules-right {
+    background: rgba(10,10,10,0.75);
+    border-radius: 15px;
+    margin: 6px 6px;
+    padding: 0 3px;
+}
+
+
+.modules-center {
+    background: rgba(10,10,10,0.75);
+    border-radius: 12px;
+    margin: 4px 0;
+    padding: 0 8px;
+}
+
+#custom-powerprofile,
+#hyprland-workspaces {
     background: transparent;
 }
 
-
-#custom-cpu,
-#custom-ram,
-#custom-gpu,
-#hyprland-workspaces,
-#custom-brightness,
-#pulseaudio,
-#network,
-#custom-bluetooth,
-#custom-battery {
-
-    background: rgba(15,15,15,0.60);
+#group-system,
+#group-control {
+    background: rgba(10,10,10,0.75);
     border-radius: 12px;
-
-    margin: 4px 2px;
-    padding: 0 6px;
-
-  box-shadow: none;
-}
-
-#group-system {
-    border-left: 2px solid rgba(139, 233, 253, 0.4);
+    margin: 4px 0;
+    padding: 0 8px;
 }
 
 #group-workspaces {
@@ -50,15 +50,12 @@ window#waybar {
     border-right: 2px solid rgba(189, 147, 249, 0.4);
 }
 
-#group-control {
-    border-right: 2px solid rgba(80, 250, 123, 0.4);
-}
-
 /* ---------- Module spacing ---------- */
 
 #custom-cpu,
 #custom-ram,
 #custom-gpu,
+#custom-swaync,
 #custom-brightness,
 #pulseaudio,
 #network,
@@ -118,6 +115,7 @@ window#waybar {
 #custom-brightness:hover,
 #pulseaudio:hover,
 #network:hover,
+#custom-swaync:hover,
 #custom-bluetooth:hover,
 #custom-battery:hover {
     background: rgba(80, 250, 123, 0.08);
