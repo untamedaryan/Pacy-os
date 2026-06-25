@@ -197,8 +197,9 @@ jsoncpp
 fmt
 spdlog
 playerctl
-power-profiles-daemon
 
+ttf-space-mono-nerd
+papirus-icon-theme
 lm_sensors
 nvidia-utils
 bluez-utils
