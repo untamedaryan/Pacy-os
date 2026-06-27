@@ -12,8 +12,4 @@ rm -f /usr/share/hypr/w2.png
 rm -f /usr/share/hypr/lockdead.png
 rm -f /usr/share/hypr/lockdead2.png
 
-# Enable services
-#systemctl enable dbus seatd greetd
-
-
 

@@ -1,0 +1,12 @@
+[Unit]
+Description=Pacy OS live setup
+After=multi-user.target
+
+[Service]
+Type=oneshot
+# in pacy-setup.service change ExecStart to:
+ExecStart=/bin/bash -c 'chmod +x /home/liveuser/.config/waybar/scripts/*.sh'
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
